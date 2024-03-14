@@ -7,6 +7,7 @@ from PIL import Image
 import tensorflow as tf
 import os
 from remedies import REMEDIES
+import threading
 
 app = FastAPI()
 
@@ -58,7 +59,21 @@ async def predict(
         'confidence': float(confidence),
         'remedies': remedies
     }
+def ok():
+    import subprocess
+
+    command = "npm run dev"
+
+    result = subprocess.run(command, shell=True, capture_output=True, text=True)
+    print("Command output:")
+    print(result.stdout)
+
+    if result.returncode != 0:
+        print("Error:", result.stderr)
 
 
 if __name__ == "__main__":
+    t1 = threading.Thread(target=ok)
+    t1.start()
     uvicorn.run(app, host='localhost', port=8000)
+    
