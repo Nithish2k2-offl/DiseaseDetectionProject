@@ -1,0 +1,51 @@
+/* In your SignUp.css file or any other CSS file you're using */
+
+.signup-container {
+    height: 85%;
+    width: 50%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 10px;
+    border: 3px solid #afafaf;
+    border-radius: 30px;
+    background-color: rgb(212, 212, 212);
+    backdrop-filter: blur(100px);
+    box-shadow: 10px 10px 30px #272727;
+    position: fixed;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+
+.input-field {
+    width: 95%;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgb(235, 226, 189);
+    border: 1px solid #373737;
+    border-radius: 30px;
+
+}
+
+.submit-button {
+    width: 100%;
+    font-family: 'comic sans ms';
+    padding: 10px;
+    background-color: #753806;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid #000000;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+p {
+    margin-top: 10px;
+    text-align: center;
+}

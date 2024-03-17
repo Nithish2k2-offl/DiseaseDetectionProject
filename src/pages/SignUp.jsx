@@ -4,24 +4,24 @@ import { supabase } from '../client';
 
 const SignUp = () => {
 
-  const [formData,setFormData] = useState({
-    fullName:'',email:'',password:''
+  const [formData, setFormData] = useState({
+    fullName: '', email: '', password: ''
   })
 
   console.log(formData)
 
-  function handleChange(event){
-    setFormData((prevFormData)=>{
-      return{
+  function handleChange(event) {
+    setFormData((prevFormData) => {
+      return {
         ...prevFormData,
-        [event.target.name]:event.target.value
+        [event.target.name]: event.target.value
       }
 
     })
 
   }
 
-  async function handleSubmit(e){
+  async function handleSubmit(e) {
     e.preventDefault()
 
     try {
@@ -39,46 +39,46 @@ const SignUp = () => {
       if (error) throw error
       alert('Check your email for verification link')
 
-      
+
     } catch (error) {
       alert(error)
     }
   }
 
-
-
-
   return (
-    <div>
+    <div className="login-container">
       <form onSubmit={handleSubmit}>
-        <input 
+        <input
+          className="input-field"
           placeholder='Fullname'
           name='fullName'
           onChange={handleChange}
         />
 
-        <input 
+        <input
+          className="input-field"
           placeholder='Email'
           name='email'
           onChange={handleChange}
         />
 
-        <input 
+        <input
+          className="input-field"
           placeholder='Password'
           name='password'
           type="password"
           onChange={handleChange}
         />
 
-        <button type='submit'>
+        <button className="submit-button" type='submit'>
           Submit
         </button>
-
-
       </form>
-      Already have an account?<Link to='/'>Login</Link> 
+
+      <p>Already have an account? <Link to='/'>Login</Link></p>
     </div>
-  )
+  );
+
 }
 
 export default SignUp

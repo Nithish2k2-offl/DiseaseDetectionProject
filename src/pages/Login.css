@@ -1,0 +1,79 @@
+.login-container {
+    height: 85%;
+    width: 50%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 10px;
+    border: 3px solid #afafaf;
+    border-radius: 30px;
+    background-color: rgb(212, 212, 212);
+    backdrop-filter: blur(100px);
+    box-shadow: 10px 10px 30px #272727;
+    position: fixed;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+
+#login-heading {
+    text-align: center;
+    font-weight: bolder;
+    color: #453215;
+    font-size: xx-large;
+    font-family: 'comic sans ms';
+}
+
+body {
+    background-image: url(wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-color: #f0f0f0;
+    /* Change to your desired color */
+    background-size: cover;
+    background-position: center;
+}
+
+.input-field {
+    width: 95%;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgb(235, 226, 189);
+    border: 1px solid #373737;
+    border-radius: 30px;
+}
+
+.submit-button {
+    width: 100%;
+    font-family: 'comic sans ms';
+    padding: 10px;
+    background-color: #753806;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid #000000;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #b55c13;
+
+}
+
+.signup-link {
+    margin-top: 10px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: larger;
+    font-family: 'comic sans ms';
+}
+
+.signup-link a {
+    color: rgb(71, 71, 71);
+    text-decoration: underline;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+    color: #753806;
+}
