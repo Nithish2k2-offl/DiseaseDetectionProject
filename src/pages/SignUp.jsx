@@ -47,6 +47,7 @@ const SignUp = () => {
 
   return (
     <div className="login-container">
+      <h1 id='login-heading'>Sign-Up</h1>
       <form onSubmit={handleSubmit}>
         <input
           className="input-field"
@@ -69,13 +70,20 @@ const SignUp = () => {
           type="password"
           onChange={handleChange}
         />
+        <br />
+        <br />
+        <hr />
+        <br />
 
         <button className="submit-button" type='submit'>
           Submit
         </button>
+        <br />
+        <br />
+        <hr />
       </form>
 
-      <p>Already have an account? <Link to='/'>Login</Link></p>
+      <p className="signup-link">Already have an account? <Link to='/'>Login</Link></p>
     </div>
   );
 
