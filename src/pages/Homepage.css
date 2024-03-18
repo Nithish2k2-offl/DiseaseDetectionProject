@@ -1,0 +1,26 @@
+/* Homepage.css */
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    height: 100vh;
+}
+
+body {
+    background-image: url(leaves.jpg);
+}
+
+.title {
+    background-color: transparent;
+    backdrop-filter: blur(30px);
+    padding: 20px;
+    width:1300px;
+    text-align: center;
+}
+
+#title {
+    color: #ffffff;
+    font-family: 'comic sans ms';
+    font-size:xx-large;
+}

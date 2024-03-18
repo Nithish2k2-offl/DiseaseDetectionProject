@@ -42,19 +42,20 @@ function PredictForm() {
   };
 
   return (
-    <div>
+    <div className="container">
       <input type="file" accept="image/*" onChange={handleFileChange} />
-      <button class="predictbutton" onClick={handlePredict}>Predict</button>
-      {error && <p style={{ color: 'red' }}>{error}</p>}
-
+      <button className="predictButton" onClick={handlePredict}>Predict</button>
+      {error && <p className="errorMessage">{error}</p>}
+  
       {result && (
-        <div>
-          <p>Class: {result.class}</p>
-          <p>Confidence: {result.confidence * 100 + " %"}</p>
-          <p>Remedies: {result.remedies}</p>
+        <div className="resultContainer">
+          <p><span className="resultLabel">Class:</span> {result.class}</p>
+          <p><span className="resultLabel">Confidence:</span> {result.confidence * 100 + " %"}</p>
+          <p><span className="resultLabel">Remedies:</span> {result.remedies}</p>
         </div>
       )}
     </div>
   );
+  
 }
 export default PredictForm;
