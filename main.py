@@ -23,7 +23,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-MODEL = tf.keras.models.load_model("C:/Users/nith/Desktop/Remote plant disease diagnosis/basic models/1")
+MODEL = tf.keras.models.load_model("C:/Users/nith/Desktop/sample1/basic models/1")
 
 CLASS_NAMES = ["Early Blight", "Late Blight", "Healthy"]
 
@@ -76,4 +76,3 @@ if __name__ == "__main__":
     t1 = threading.Thread(target=ok)
     t1.start()
     uvicorn.run(app, host='localhost', port=8000)
-    
