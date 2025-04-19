@@ -4,6 +4,7 @@
     justify-content: top;
     align-items: center;
     height: 100vh;
+    backdrop-filter: blur(50px);
 }
 
 body {
@@ -13,6 +14,7 @@ body {
     justify-content:center;
     align-items: center;
     background-image: url(leaves.jpg);
+    
 }
 
 .title {
